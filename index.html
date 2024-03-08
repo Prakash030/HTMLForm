@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>HTML Form</h2>
+        <div id="error_message"></div>
+        <form id="myform" onsubmit="return false;">
+            <div class="input_field">
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="input_field">
+                <input type="email" placeholder="Email" id="email">
+            </div>
+            <div class="input_field">
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter Message"></textarea>
+            </div>
+            <div class="btn">
+                <input type="submit" onclick="return validate();">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
